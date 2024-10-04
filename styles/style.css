@@ -1,5 +1,196 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  width: 25px;
+  height: 24px;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  left: 10px;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  width: 25px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 116px;
+  line-height: 83%;
+  word-break: break-word;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--attention-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+.subtitle-decor {
+  font-weight: 700;
+  line-height: 130%;
+  background-color: var(--accent-color);
+}
+
+/* header */
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 228px 192px 228px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 20px;
+    grid-template-rows: 442px 100px 442px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    grid-template-rows: 300px 130px 300px;
+  }
+}
+
+.header__decor {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: var(--accent-color);
+  line-height: 139%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header__decor::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .header__decor {
+    top: 20px;
+    right: 30px;
+  }
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__theme-menu-item {
+}
+
+.header__theme-menu-button {
+  background: transparent;
+  color: var(--accent-color);
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+  line-height: 100%;
+}
+
+.header__theme-menu-button_type_light {
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_type_auto {
+}
+
+.header__theme-menu-button_type_dark {
+}
+
+.header__title {
+}
+
+.header__subtitle {
+  align-self: center;
+  max-width: 364px;
+}
+
+@media (min-width: 768px) {
+  .header__subtitle {
+    justify-self: end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__subtitle {
+    max-width: 491px;
+  }
+}
+
+/* footer */
+.footer {
+}
+.footer__container {
+  display: grid;
+  justify-content: center;
+}
+
+.footer__title {
+  margin: 285px 0px;
 }
