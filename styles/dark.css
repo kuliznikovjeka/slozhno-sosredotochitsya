@@ -4,17 +4,24 @@
   переключая тему
 */
 
-
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #ff0070;
+  --attention-color: #db00ff;
+  --primary-color: #f1b2ce;
+  --secondary-color: #000028;
+
+  background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
+}
+
+@media (prefers-color-scheme: dark) {
   :root {
     --accent-color: #ff0070;
-    --attention-color: #DB00FF;
-    --primary-color: #F1B2CE;
+    --attention-color: #db00ff;
+    --primary-color: #f1b2ce;
     --secondary-color: #000028;
+  }
+
+  .page {
+    background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
   }
 }
