@@ -1,5 +1,5 @@
 .page {
-  background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
+  background: url('../images/cover-image-dark.png') no-repeat center / cover fixed var(--backround-color);
 }
 
 .wrapper {
@@ -43,7 +43,6 @@
   position: absolute;
   display: block;
   bottom: 20px;
-  /* bottom: 0px;  */
   left: 0;
   border-block-end: 1px solid var(--decorated-zone-color);
   border-inline-start: 1px solid var(--decorated-zone-color);
@@ -128,16 +127,13 @@
   display: grid;
   grid-template-rows: 228px 192px 228px;
   margin-block-end: 30px;
-  /* margin-block-end: 50px; */
   block-size: 100vh;
 }
 
 @media (min-width: 768px) {
   .header {
     grid-template-rows: 440px 100px 440px;
-    /* grid-template-rows: 297px 173px 442px; */
     margin-block-end: 40px;
-    /* margin-block-end: 80px; */
   }
 }
 
