@@ -1,8 +1,5 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   padding: 10px;
 }
 
@@ -22,8 +19,8 @@
   display: block;
   top: 0;
   right: 0;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--decorated-zone-color);
+  border-block-start: 1px solid var(--decorated-zone-color);
   width: 25px;
   height: 24px;
 }
@@ -34,8 +31,8 @@
   display: block;
   bottom: 0;
   left: 0;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--decorated-zone-color);
+  border-inline-start: 1px solid var(--decorated-zone-color);
   width: 25px;
   height: 24px;
 }
@@ -69,18 +66,19 @@
 .title {
   font-weight: 700;
   line-height: 130%;
-  color: var(--accent-color);
+  color: var(--title-color);
 }
 
 .title-decor {
   font-weight: 700;
   line-height: 130%;
+  color: var(--title-decor-color);
   background-color: var(--accent-color);
 }
 
 .text {
   line-height: 130%;
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 
 .text-shadow {
@@ -99,6 +97,14 @@
   font-weight: 400;
 }
 
+.link:hover {
+  border-block-end: 1px solid var(--text-color);
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
 /* header */
 .header {
   position: relative;
@@ -109,7 +115,8 @@
 
 @media (min-width: 768px) {
   .header {
-    grid-template-rows: 442px 100px 442px;
+    grid-template-rows: 297px 173px 442px;
+    margin-block-end: 80px;
   }
 }
 
@@ -140,6 +147,13 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
+@media (min-width: 768px) {
+  .header__title {
+    align-self: end;
+    margin-inline-start: -17px;
+  }
+}
+
 .header__theme-menu {
   justify-self: end;
   align-self: center;
@@ -164,29 +178,26 @@
   }
 }
 
-.header__theme-menu-item {
-}
-
 .header__theme-menu-button {
   background: transparent;
-  color: var(--accent-color);
+  color: var(--button-color);
   text-transform: lowercase;
   padding: 1.5px 13px;
-  line-height: 100%;
+  line-height: 130%;
 }
 
-.header__theme-menu-button_type_light {
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-hover-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end: 1px solid var(--button-color);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--accent-color);
-}
-
-.header__theme-menu-button_type_auto {
-}
-
-.header__theme-menu-button_type_dark {
+  border: 1px solid var(--button-color);
 }
 
 .header__subtitle {
@@ -216,6 +227,14 @@
 @media (min-width: 768px) {
   .why-difficult-concentrate {
     grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .why-difficult-concentrate {
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
   }
 }
 
@@ -227,8 +246,10 @@
   gap: 20px;
 }
 
-.what-reduces-concentration__title {
-  max-width: 236px;
+@media (min-width: 768px) {
+  .what-reduces-concentration__title {
+    max-width: 236px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -253,6 +274,12 @@
 @media (min-width: 768px) {
   .how-concentrate-better {
     grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .how-concentrate-better {
+    gap: 10px;
   }
 }
 
@@ -325,7 +352,7 @@
 /* footer */
 .footer {
   display: grid;
-  grid-template-rows: 647px;
+  grid-template-rows: 656px;
   justify-content: center;
   align-items: center;
 }

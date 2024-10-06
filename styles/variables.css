@@ -1,10 +1,13 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   --accent-color: #ff0070;
-  --attention-color: #DB00FF;
-  --primary-color: #F1B2CE;
-  --secondary-color: #000028;
+  --attention-color: #db00ff;
+  --decorated-zone-color: #ff0070;
+
+  --button-color: #ff0070;
+  --button-hover-color: rgba(50, 49, 45, 0.4);
+
+  --text-color: #f1b2ce;
+
+  --title-color: #ff0070;
+  --title-decor-color: #000028;
 }

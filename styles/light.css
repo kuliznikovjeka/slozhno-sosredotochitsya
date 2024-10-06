@@ -1,27 +1,42 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
   --accent-color: #ff8dcb;
   --attention-color: #ffc2e6;
-  --primary-color: #f1b2ce;
-  --secondary-color: #353430;
+  --decorated-zone-color: #353430;
+
+  --button-color: #353430;
+  --button-hover-color: rgba(50, 49, 45, 0.4);
+  --text-color: #353430;
+
+  --title-color: #353430;
+  --title-decor-color: #353430;
 
   background: url('../images/cover-image-light.png') no-repeat center / cover fixed;
+}
+
+.page.theme_light .header__decor {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
     --attention-color: #ffc2e6;
-    --primary-color: #f1b2ce;
-    --secondary-color: #353430;
+    --decorated-zone-color: #353430;
+
+    --button-color: #353430;
+    --button-hover-color: rgba(50, 49, 45, 0.4);
+
+    --text-color: #353430;
+
+    --title-color: #353430;
+    --title-decor-color: #353430;
   }
 
   .page {
     background: url('../images/cover-image-light.png') no-repeat center / cover fixed;
+  }
+
+  .header__decor {
+    display: none;
   }
 }

@@ -1,27 +1,43 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
   --accent-color: #ff0070;
   --attention-color: #db00ff;
-  --primary-color: #f1b2ce;
-  --secondary-color: #000028;
+  --decorated-zone-color: #ff0070;
+
+  --button-color: #ff0070;
+  --button-hover-color: rgba(255, 0, 112, 0.4);
+
+  --text-color: #f1b2ce;
+
+  --title-color: #ff0070;
+  --title-decor-color: #000028;
 
   background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
+}
+
+.page.theme_dark .header__decor {
+  display: flex;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --accent-color: #ff0070;
     --attention-color: #db00ff;
-    --primary-color: #f1b2ce;
-    --secondary-color: #000028;
+    --decorated-zone-color: #ff0070;
+
+    --button-color: #ff0070;
+    --button-hover-color: rgba(255, 0, 112, 0.4);
+
+    --text-color: #f1b2ce;
+
+    --title-color: #ff0070;
+    --title-decor-color: #000028;
   }
 
   .page {
     background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
+  }
+
+  .header__decor {
+    display: flex;
   }
 }
