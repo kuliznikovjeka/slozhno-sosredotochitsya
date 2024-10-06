@@ -4,7 +4,7 @@
   --decorated-zone-color: #ff0070;
 
   --button-color: #ff0070;
-  --button-hover-color: rgba(255, 0, 112, 0.4);
+  /* --button-hover-color: rgba(255, 0, 112, 0.4); */
 
   --text-color: #f1b2ce;
 
@@ -25,7 +25,7 @@
     --decorated-zone-color: #ff0070;
 
     --button-color: #ff0070;
-    --button-hover-color: rgba(255, 0, 112, 0.4);
+    /* --button-hover-color: rgba(255, 0, 112, 0.4); */
 
     --text-color: #f1b2ce;
 
