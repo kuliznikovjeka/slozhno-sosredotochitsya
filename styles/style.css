@@ -1,13 +1,26 @@
 .page {
   background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
-  /* padding: 10px; */
 }
 
-/* @media (min-width: 768px) {
-  .page {
+.wrapper {
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
     padding: 20px;
   }
-} */
+}
+
+.main {
+  margin-block-end: 50px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin-block-end: 80px;
+  }
+}
 
 .decorated-zone {
   position: relative;
@@ -37,12 +50,12 @@
   height: 24px;
 }
 
-.section {
+.section:not(:last-child) {
   margin-block-end: 50px;
 }
 
 @media (min-width: 768px) {
-  .section {
+  .section:not(:last-child) {
     margin-block-end: 80px;
   }
 }
@@ -289,15 +302,6 @@
 /* how-concentrate-better  */
 
 /* gallery */
-.gallery {
-  margin-block-end: 45px;
-}
-
-/* @media (min-width: 768px) {
-  .gallery {
-    margin-block-end: 80px;
-  }
-} */
 
 .gallery__title {
   margin-block-end: 10px;
