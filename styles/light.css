@@ -21,8 +21,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  /* TODO убрать root */
-  :root {
+  body {
     --accent-color: #ff8dcb;
     --attention-color: #ffc2e6;
     --decorated-zone-color: #353430;
