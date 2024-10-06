@@ -110,6 +110,7 @@
   display: grid;
   grid-template-rows: 228px 192px 228px;
   margin-block-end: 50px;
+  block-size: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -289,14 +290,14 @@
 
 /* gallery */
 .gallery {
-  margin-block-end: 40px;
+  margin-block-end: 45px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .gallery {
     margin-block-end: 80px;
   }
-}
+} */
 
 .gallery__title {
   margin-block-end: 10px;
@@ -351,7 +352,7 @@
 /* footer */
 .footer {
   display: grid;
-  grid-template-rows: 656px;
+  grid-template-rows: 668px;
   justify-content: center;
   align-items: center;
   block-size: 100vh;
