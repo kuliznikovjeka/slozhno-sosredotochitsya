@@ -49,7 +49,6 @@
 
 .main-title {
   font-weight: 700;
-  font-size: 116px;
   line-height: 83%;
   word-break: break-word;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -355,6 +354,7 @@
   grid-template-rows: 656px;
   justify-content: center;
   align-items: center;
+  block-size: 100vh;
 }
 
 @media (min-width: 768px) {
