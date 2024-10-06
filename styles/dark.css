@@ -13,7 +13,7 @@
   --title-color: #ff0070;
   --title-decor-color: #000028;
 
-  background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
+  background: url('../images/cover-image-dark.png') no-repeat center / cover fixed var(--backround-color);
 }
 
 .page.theme_dark .header__decor {
@@ -38,7 +38,7 @@
   }
 
   .page {
-    background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
+    background: url('../images/cover-image-dark.png') no-repeat center / cover fixed var(--backround-color);
   }
 
   .header__decor {
