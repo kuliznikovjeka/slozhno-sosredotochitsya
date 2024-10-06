@@ -1,5 +1,8 @@
 .page {
   background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+  margin: 0 auto;
   padding: 10px;
 }
 
