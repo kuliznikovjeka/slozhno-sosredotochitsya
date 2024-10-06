@@ -3,7 +3,7 @@
   --attention-color: #db00ff;
   --decorated-zone-color: #ff0070;
 
-  --backround-color: #000028;
+  --background-color: #000028;
 
   --button-color: #ff0070;
   --button-hover-color: rgba(255, 0, 112, 0.4);
@@ -13,7 +13,8 @@
   --title-color: #ff0070;
   --title-decor-color: #000028;
 
-  background: url('../images/cover-image-dark.png') no-repeat center / cover fixed var(--backround-color);
+  background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
+  background-color: var(--background-color);
 }
 
 .page.theme_dark .header__decor {
@@ -21,12 +22,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  /* TODO убрать root */
   :root {
     --accent-color: #ff0070;
     --attention-color: #db00ff;
     --decorated-zone-color: #ff0070;
 
-    --backround-color: #000028;
+    --background-color: #000028;
 
     --button-color: #ff0070;
     --button-hover-color: rgba(255, 0, 112, 0.4);
@@ -38,7 +40,8 @@
   }
 
   .page {
-    background: url('../images/cover-image-dark.png') no-repeat center / cover fixed var(--backround-color);
+    background: url('../images/cover-image-dark.png') no-repeat center / cover fixed;
+    background-color: var(--background-color);
   }
 
   .header__decor {

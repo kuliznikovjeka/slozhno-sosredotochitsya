@@ -3,7 +3,7 @@
   --attention-color: #ffc2e6;
   --decorated-zone-color: #353430;
 
-  --backround-color: #fff1f7;
+  --background-color: #fff1f7;
 
   --button-color: #353430;
   --button-hover-color: rgba(50, 49, 45, 0.4);
@@ -13,6 +13,7 @@
   --title-decor-color: #353430;
 
   background: url('../images/cover-image-light.png') no-repeat center / cover fixed;
+  background-color: var(--background-color);
 }
 
 .page.theme_light .header__decor {
@@ -20,12 +21,13 @@
 }
 
 @media (prefers-color-scheme: light) {
+  /* TODO убрать root */
   :root {
     --accent-color: #ff8dcb;
     --attention-color: #ffc2e6;
     --decorated-zone-color: #353430;
 
-    --backround-color: #fff1f7;
+    --background-color: #fff1f7;
 
     --button-color: #353430;
     --button-hover-color: rgba(50, 49, 45, 0.4);
@@ -38,6 +40,7 @@
 
   .page {
     background: url('../images/cover-image-light.png') no-repeat center / cover fixed;
+    background-color: var(--background-color);
   }
 
   .header__decor {
