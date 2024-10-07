@@ -77,8 +77,13 @@
 
 @media (min-width: 1024px) {
   .content-section {
-    gap: 10px;
+    gap: 20px 10px;
   }
+}
+
+.content-section__body {
+  display: grid;
+  gap: 20px;
 }
 
 .main-title {
@@ -259,22 +264,11 @@
 }
 /* header */
 
-/* why-difficult-concentrate  */
-.why-difficult-concentrate__body {
-  display: grid;
-  gap: 20px;
-}
-/* why-difficult-concentrate  */
-
 /* what-reduces-concentration */
-.what-reduces-concentration {
-  display: grid;
-  gap: 20px;
-}
-
-.what-reduces-concentration__body {
-  display: grid;
-  gap: 20px;
+@media (min-width: 768px) {
+  .what-reduces-concentration {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 768px) {
